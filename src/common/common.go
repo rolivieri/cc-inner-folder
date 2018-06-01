@@ -1,4 +1,4 @@
-package mylib
+package common
 
 type User struct {
 	Firstname string `json:"firstname"`

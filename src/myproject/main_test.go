@@ -10,7 +10,7 @@ package main
 
 import (
 	"fmt"
-	"myproject/mylib"
+	"myproject/common"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -25,7 +25,7 @@ func TestXYZ(t *testing.T) {
 }
 
 func TestInnerFolder(t *testing.T) {
-	user := mylib.User{Email: "john_doe@us.ibm.com", Firstname: "John", Lastname: "Doe"}
+	user := common.User{Email: "john_doe@us.ibm.com", Firstname: "John", Lastname: "Doe"}
 	assert.Equal(t, user.Firstname, "John", "The two words should be the same.")
 	fmt.Println("Finished TestInnerFolder...")
 }
